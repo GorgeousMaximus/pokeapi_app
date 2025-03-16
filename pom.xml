@@ -22,6 +22,7 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>3.4.2</version>
                 <configuration>
+                    <finalName>PokemonFetcher_1.0</finalName>
                     <archive>
                         <manifest>
                             <mainClass>org.personal.PokemonFetcher</mainClass>
@@ -41,6 +42,10 @@
                         <goals>
                             <goal>shade</goal>
                         </goals>
+                        <configuration>
+                            <finalName>PokemonFetcher_1.0</finalName>
+                            <outputDirectory>${project.basedir}</outputDirectory>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>

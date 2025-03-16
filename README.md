@@ -16,11 +16,11 @@ To compile and run the program a Maven wrapper is included for the time being.
 3. To run for the first time on windows open cmd in the project folder and enter the following:
    ```bash
     mvnw.cmd package
-    java -jar API_work-1.0-SNAPSHOT.jar
+    java -jar PokemonFetcher_1.0.jar
    ```
    Then to run after first install:
    ```cmd
-   java -jar API_work-1.0-SNAPSHOT.jar
+   java -jar PokemonFetcher_1.0.jar
 
 ## Example Output
 In its current form the app will provide information on a Pokémon selected by name or ID number, then allow the user to repeat this process as required.
