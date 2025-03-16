@@ -8,20 +8,25 @@ This Java program fetches Pokémon data from the [PokéAPI](https://pokeapi.co/)
 - Parses JSON using `Gson`.
 
 ## How to Run
+To compile and run the program a Maven wrapper is included for the time being.
 1. Install Java (version 11+).
 2. Clone this repository:
    ```bash
    git clone https://github.com/yourusername/your-repo-name.git
-3. Compile and run the program:
+3. To run for the first time on windows open cmd in the project folder and enter the following:
    ```bash
-   javac PokemonFetcher.java
-   java PokemonFetcher
+    mvnw.cmd package
+    java -jar API_work-1.0-SNAPSHOT.jar
+   ```
+   Then to run after first install:
+   ```cmd
+   java -jar API_work-1.0-SNAPSHOT.jar
 
 ## Example Output
    ```
-    Select an pokemon number you want to know about: 25
-    Pokemon: Pikachu
-    Pokedex Number: 25
+    Select a Pokédex number you want to know about: 25
+    Pokémon: Pikachu
+    Pokédex Number: 25
     Height: 4
     Weight: 60
    ```
@@ -29,4 +34,5 @@ This Java program fetches Pokémon data from the [PokéAPI](https://pokeapi.co/)
 ## Future Improvements
 - Add error handling for invalid inputs
 - Allow users to fetch multiple Pokemon at once.
+- Implement a simple GUI interface.
 - Cache results to reduce API calls.

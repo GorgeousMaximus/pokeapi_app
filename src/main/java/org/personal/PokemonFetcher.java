@@ -13,7 +13,7 @@ public class PokemonFetcher {
         String apiUrl = "https://pokeapi.co/api/v2/pokemon/";
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Select an pokemon number you want to know about: ");
+        System.out.println("Select a PokéDex number you want to know about: ");
         String iD = scanner.next();
 
         apiUrl += iD;
@@ -35,8 +35,8 @@ public class PokemonFetcher {
             int weight = json.get("weight").getAsInt();
             int id = json.get("id").getAsInt();
 
-            System.out.println("Pokemon: " + name);
-            System.out.println("Pokedex Number: " + id);
+            System.out.println("Pokémon: " + name);
+            System.out.println("Pokédex Number: " + id);
             System.out.println("Height: " + height);
             System.out.println("Weight: " + weight);
 
