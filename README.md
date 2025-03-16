@@ -23,16 +23,22 @@ To compile and run the program a Maven wrapper is included for the time being.
    java -jar API_work-1.0-SNAPSHOT.jar
 
 ## Example Output
+In its current form the app will provide information on a Pokémon selected by name or ID number, then allow the user to repeat this process as required.
    ```
-    Select a Pokédex number you want to know about: 25
-    Pokémon: Pikachu
-    Pokédex Number: 25
+    Welcome! To start, enter a global PokéDex number or Pokémon name.
+    Select a PokéDex number you want to know about: 
+    25
+    Pokémon: pikachu
+    Global PokéDex ID: 25
+    Types: electric
     Height: 4
     Weight: 60
+    Press x to exit, or any other key to continue
    ```
+To stop simply type the specified character to exit.
 
 ## Future Improvements
 - Add error handling for invalid inputs
-- Allow users to fetch multiple Pokemon at once.
+- Allow users to fetch multiple Pokémon at once.
 - Implement a simple GUI interface.
 - Cache results to reduce API calls.
